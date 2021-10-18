@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercicio Alice</title>
+  </head>
+  <body>
+    <div id="opac">
+      <h1>
+        Ao terminar de selecionar clique no
+        <div id="envio" onclick="chamarJanela()">botão</div>
+      </h1>
+      <form class="container">
+        <div class="item cor">
+          <p>Escolha uma cor:</p>
+          <p>
+            <input class="checkCor" name="cor-faixa" id="red" type="radio" />
+            <label for="red">Vermelho</label>
+          </p>
+
+          <p>
+            <input class="checkCor" name="cor-faixa" id="blue" type="radio" />
+            <label for="blue">Azul</label>
+          </p>
+
+          <p>
+            <input class="checkCor" name="cor-faixa" id="orange" type="radio" />
+            <label for="orange">Laranja</label>
+          </p>
+
+          <p>
+            <input class="checkCor" name="cor-faixa" id="violet" type="radio" />
+            <label for="violet">Violeta</label>
+          </p>
+        </div>
+        <div class="item">
+          <p>Escolha outra cor:</p>
+          <p>
+            <input class="checkCor" name="cor-letra" id="green" type="radio" />
+            <label for="green">Verde</label>
+          </p>
+          <p>
+            <input class="checkCor" name="cor-letra" id="brown" type="radio" />
+            <label for="brown">Marrom</label>
+          </p>
+        </div>
+        <div class="item">
+          <p>Escolha mais uma cor:</p>
+          <p>
+            <input class="checkCor" name="cor-fundo" id="grey" type="radio" />
+            <label for="grey">Cinza</label>
+          </p>
+          <p>
+            <input class="checkCor" name="cor-fundo" id="yellow" type="radio" />
+            <label for="yellow">Amarelo</label>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div id="caixaMaior">
+      <div id="faixa">
+        <p class="cor-fonte" id="cabecalhoCaixa">Aviso</p>
+      </div>
+      <div class="container" id="caixa2">
+        <p class="cor-fonte" id="mensagemCaixa">Cor padrão - nada alterado</p>
+        <button id="botaoOk" onclick="fecharJanela()">Fechar</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
